@@ -1,0 +1,128 @@
+body {
+    height: auto;
+    min-height: 100%;
+    background: grey;
+}
+
+
+header {
+    height: 5%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: red;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+caption {
+    margin: 15px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+th {
+    font-size: 20px;
+}
+
+a:hover {
+
+    background-color: #6959cd;
+    color: #ffeca4;
+}
+
+.content {
+    width: 80%;
+    padding-right: 20px;
+    margin-left: 120px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    max-width: 1200px;
+}
+
+.major {
+        font-size: 16px;
+}
+
+
+#fs {
+    font-size: 20px;
+
+}
+
+.tablem {
+    font-size: 16px;
+    border-collapse: collapse;
+    border-radius: solid 1px black;
+    border-color: black;
+    border: solid 1px black;
+}
+
+.tablem td,th {
+    border-collapse: collapse;
+    border: solid black 1px;
+}
+
+.tablefirst {
+    text-align: center;
+}
+
+.tablesecond {
+    text-align: justify;
+    padding: 10px;
+}
+
+.thfirst {
+    padding: 10px;
+}
+
+.oprostext {
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.congr {
+    text-align: center;
+}
+
+.opros {
+    margin-left: 100px;
+}
+
+#copyr {
+    text-align: right;
+    font-size: 10px;
+    padding-left: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+
+.footer{
+    text-align: right;
+    font-size: 12px;
+    position: 0%;
+    left: 0;
+    width: 100%;
+}
+
+.btn {
+    margin-left: 48%;
+}
+
+.otvet {
+
+
+}
