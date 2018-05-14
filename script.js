@@ -10,7 +10,7 @@ $(document).ready(function() {
 	$(".btntest").click(function() {
 		$("#voited").show(300);
 		$("#voited").animate({opacity: 1}, 700)
-		$(".navtext_1").show('fast');
+		$(".navtext_1").show();
 	});
 
 	$(".btn").click(function() {
