@@ -5,10 +5,12 @@ $(document).ready(function() {
 	$(".marq").hide();
 	$("#voited").hide();
 	$("#voited").css("opacity", 0);
+	$(".navtext_1").hide();
 
 	$(".btntest").click(function() {
 		$("#voited").show(300);
 		$("#voited").animate({opacity: 1}, 700)
+		$(".navtext_1").show('fast');
 	});
 
 	$(".btn").click(function() {
