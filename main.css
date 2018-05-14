@@ -1,7 +1,7 @@
 body {
     height: auto;
     min-height: 100%;
-    background: grey;
+    background: #bcb1b1;
 }
 
 
@@ -13,7 +13,7 @@ header {
 h2 {
     text-align: center;
     font-size: 24px;
-    color: red;
+    color: #522b95;
 }
 
 p {
@@ -32,8 +32,13 @@ th {
     font-size: 20px;
 }
 
-a:hover {
+li {
+    padding-top: 12px;
+    font-size: 18px;
+}
 
+
+a:hover {
     background-color: #6959cd;
     color: #ffeca4;
 }
@@ -55,6 +60,7 @@ a:hover {
 
 
 #fs {
+    margin-left: 50px;
     font-size: 20px;
 
 }
@@ -90,8 +96,11 @@ a:hover {
     margin-left: 60px;
     margin-bottom: 30px;
 }
-
 .congr {
+    text-align: center;
+}   
+
+.otvet{
     text-align: center;
 }
 
@@ -119,10 +128,31 @@ a:hover {
 }
 
 .btn {
-    margin-left: 48%;
+    border-radius: 8px;
+    margin-left: 44%;
 }
 
-.otvet {
+.marque {
+    font-size: 18px;
+}
 
+#tbtn {
+    border-radius: 12px;
+    margin-left: 42%;
+}
 
+.ino1 {
+    margin-left: 40px;
+}
+
+.ino2 {
+    margin-left: 2px;
+}
+
+.ino3 {
+    margin-left: 7px;
+}
+
+.oc {
+    color: #6225f0;
 }

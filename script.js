@@ -1,14 +1,20 @@
 $(document).ready(function() {
 	$(".congr").css("opacity", 0);
 	$(".otvet").hide();
+	$(".tablem").hide();
+	$(".marq").hide();
+
 	$(".btn").click(function() {
 
+		var t = "компас";
 		var ball = 0;
 		var mark = "";
 
 		var n = $("#name").val();
 		var f = $("#familia").val();
 		var o = $("#othces").val();
+
+		if(n != "" && f != "" && o != ""){
 
 		if ($("#fir").prop("checked")) {
 			ball += 1;
@@ -30,32 +36,50 @@ $(document).ready(function() {
 			ball += 1;
 		}
 
+		if ($("#textpole").val().toUpperCase() == t.toUpperCase()) {
+			ball += 1;
+		}
+
+		if ($("#onee").prop("checked")) {
+			ball += 1;
+		}
+
+		if ($("#thre").prop("checked")) {
+			ball += 1;
+		}
+
+		if ($("#fou").prop("checked")) {
+			ball += 1;
+		}
+
 		switch (ball) {
-			case 2:
+			case 3:
+			case 4:
 				mark = " Неудовлетворительно"
 				break;
-			case 3:
+			case 5:
+			case 6:
 				mark = " Удовлетворительно"
 				break;
-			case 4:
+			case 7:
+			case 8:
 				mark = " Хорошо"
 				break;
-			case 5:
+			case 9:
 				mark = " Отлично"
 				break;
 
 			default:
 				mark = " Не аттестован"
 				break;
-		}
+		}	
 
 		$(".otvet").html(f + " " + n + " " + o + ", " + 
 		" колличество набранных баллов: " + ball + "<br>"
-		 + "<br>" + "Ваша оценка:" + mark);
+		 + "<br>" + "Ваша оценка:" + "<b>" + mark + "</b>");	
 
-		$(".btn").val("Скрыть");
 
-		if(ball >= 4) {
+		if(ball >= 7) {
 			$(".congr").text("Поздравляем!");
 			$(".congr").animate({
 				fontSize: 35,
@@ -64,10 +88,20 @@ $(document).ready(function() {
 				4000);
 		}
 
+		$(".marque").html("<marquee direction=left loop=50 behavior=scroll scrollamount=5 class=marq>" + "P.S. Не забудьте поставить оценку за проект:)" + "</marquee>");
+
+	}else{
+		alert("Заполните поля фамилии, имени, отчества");
+	}
+
 	});
 
 	$(".btn").click(function() {
-		$(".otvet").toggle('1000');
+		$(".otvet").show('1000');
 	});
 
+
+	$("#tbtn").click(function() {
+		$(".tablem").toggle('1000');
+	});
 });
