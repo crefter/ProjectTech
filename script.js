@@ -3,6 +3,13 @@ $(document).ready(function() {
 	$(".otvet").hide();
 	$(".tablem").hide();
 	$(".marq").hide();
+	$("#voited").hide();
+	$("#voited").css("opacity", 0);
+
+	$(".btntest").click(function() {
+		$("#voited").show(300);
+		$("#voited").animate({opacity: 1}, 700)
+	});
 
 	$(".btn").click(function() {
 
@@ -102,6 +109,6 @@ $(document).ready(function() {
 
 
 	$("#tbtn").click(function() {
-		$(".tablem").toggle('1000');
+		$(".tablem").toggle('800');
 	});
 });

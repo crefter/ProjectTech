@@ -127,9 +127,9 @@ a:hover {
     width: 100%;
 }
 
-.btn {
+.btn, .btntest {
     border-radius: 8px;
-    margin-left: 44%;
+    margin-left: 45%;
 }
 
 .marque {
