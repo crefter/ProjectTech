@@ -7,10 +7,11 @@ $(document).ready(function() {
 	$("#voited").hide();
 	$("#voited").css("opacity", 0);
 	$(".navtext_1").hide();
-	$(".repeat").hide();
-
+	$(".repeat-btn").hide();
 
 	var t = "компас";
+
+
 
 	$(".btntest").click(function() {
 
@@ -38,10 +39,9 @@ $(document).ready(function() {
 
 	});
 
-
 		$(".btn").click(function() {
 
-			
+
 			var ball = 0;
 			var mark = "";
 
@@ -115,13 +115,13 @@ $(document).ready(function() {
 				default:
 					mark = " Не аттестован"
 					break;
-			}	
+			}
 
-			
 
-			$(".otvet").html(f + " " + n + " " + o + ", " + 
+
+			$(".otvet").html(f + " " + n + " " + o + ", " +
 			" колличество набранных баллов: " + ball + "<br>"
-			 + "<br>" + "Ваша оценка:" + "<b>" + mark + "</b>");	
+			 + "<br>" + "Ваша оценка:" + "<b>" + mark + "</b>");
 
 
 			if(ball >= 7) {
@@ -135,7 +135,8 @@ $(document).ready(function() {
 
 			$("html, body").animate({scrollTop: $(".footer").offset().top }, 2500);
 
-			$(".marque").html("<marquee direction=left loop=50 behavior=scroll scrollamount=5 class=marq>" + "Спасибо за прохождение теста:)" + "</marquee>");
+			$(".marque").html("<marquee direction=left loop=50 behavior=scroll scrollamount=5 class=marq>" + 
+				"Спасибо за прохождение теста:)" + "</marquee>");
 
 
 
@@ -143,9 +144,9 @@ $(document).ready(function() {
 			alert("Заполните поля фамилии, имени, отчества");
 		}
 
-		$(".repeat").show(100);
+		$(".repeat-btn").show(100);
 
-		$(".repeat").click(function() {
+		$(".repeat-btn").click(function() {
 
 			$(":input", "#voited").not(":button").val("");
 			$("input[type='radio']").prop("checked", "");
@@ -153,15 +154,13 @@ $(document).ready(function() {
 			ball = 0;
 			mark = "-";
 			$(".congr").hide();
-			$(".otvet").html(f + " " + n + " " + o + ", " + 
+			$(".otvet").html(f + " " + n + " " + o + ", " +
 			" колличество набранных баллов: " + ball + "<br>"
 			 + "<br>" + "Ваша оценка:" + "<b>" + mark + "</b>");
-			$(".marque").html("<marquee direction=left loop=50 behavior=scroll scrollamount=5 class=marq>" + "P.S. Не забудьте поставить оценку за проект:)" + "</marquee>");
-			$("html, body").animate({scrollTop: $("#voited").offset().top },500);
+			$(".marque").html("<marquee direction=left loop=50 behavior=scroll scrollamount=5 class=marq>" 
+				+ "P.S. Не забудьте поставить оценку за проект:)" + "</marquee>");
+			$("html, body").animate({scrollTop: $("#voited").offset().top }, 500);
 		});
-
-
-
 
 		$(".otvet").show('1000');
 

@@ -60,7 +60,7 @@ a:hover {
 
 
 #fs {
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     margin-left: 4%;
     font-size: 21px;
 
@@ -99,7 +99,8 @@ a:hover {
 }
 .congr {
     text-align: center;
-}   
+    margin-left: 2%;
+}
 
 .otvet{
     text-align: center;
@@ -130,7 +131,7 @@ a:hover {
 
 .btn, .btntest {
     border-radius: 8px;
-    margin-left: 46%;
+    margin-left: 47%;
 }
 
 .marque {
@@ -171,13 +172,10 @@ a:hover {
     margin-top: -50px;
 }
 
-.repeat {
-    color: #433737;
-    margin-top: 40px;
-    text-align: center;
-}
 
 .repeat-btn {
-    margin-left: 5px;
+    color: #433737;
+    margin-top: 40px;
+    margin-left: 46%;
     border-radius: 5px;
 }
